@@ -1,7 +1,7 @@
 
 jest.mock('../../services/galleryApi', () => ({
   add: jest.fn(() => Promise.resolve('PAYLOAD')),
-  remove: jest.fn(() => Promise.resolve('PAYLOAD'))
+  remove: jest.fn(() => Promise.resolve('NOT PAYLOAD'))
 }));
 import { IMAGE_ADD, IMAGE_REMOVE, FILTER_APPLY } from './reducers';
 import { applyFilter, addImage, removeImage } from './actions';
