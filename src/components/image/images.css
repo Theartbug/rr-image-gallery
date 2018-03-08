@@ -1,8 +1,13 @@
 @import '../../styles/variables.css';
 
 .images-box {
+  width: 80%;
+  margin: 0 auto;
   .toggle-form-button {
     font-weight: 600;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
     width: 100%;
     padding: .4rem;
     font-size: 1.5rem;

@@ -1,6 +1,7 @@
 .filter-form {
   text-align: center;
-  margin-bottom: 1rem;
+  max-width: 500px;
+  margin: 1rem auto;
   label {
     margin-bottom: 1rem;
     font-size: 1.2em;

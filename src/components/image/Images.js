@@ -25,10 +25,12 @@ class Images extends Component {
     
     return (
       <div className="images-box">
-        <Filter/>
-        <button className="toggle-form-button" onClick={this.toggleForm}>{
-          visible ? 'Hide Form' : 'Add an Image' 
-        }</button>
+        <div className="group-buttons">
+          <Filter/>
+          <button className="toggle-form-button" onClick={this.toggleForm}>{
+            visible ? 'Hide Form' : 'Add an Image' 
+          }</button>
+        </div>
         { visible && <ImageForm onComplete={addImage}/> }
         <ul className="images">
           {images.map(image => <Image key={image.id} {...image}/>)}
