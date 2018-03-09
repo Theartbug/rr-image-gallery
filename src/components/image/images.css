@@ -1,6 +1,23 @@
 @import '../../styles/variables.css';
 
 .images-box {
+  width: 80%;
+  margin: 0 auto;
+  .toggle-form-button {
+    font-weight: 600;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: .4rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    background: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

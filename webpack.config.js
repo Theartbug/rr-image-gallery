@@ -7,11 +7,13 @@ const path = `${__dirname}/build`;
 module.exports = {
   entry: './src/main.js',
   output: {
+    publicPath: '/',
     path,
-    filename: 'bundle.[hash].js',
+    filename: 'bundle.[hash].js'
   },
   devServer: {
     contentBase: './build',
+    historyApiFallback: true
   },
   devtool: 'inline-source-map',
   plugins: [
